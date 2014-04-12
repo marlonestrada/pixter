@@ -1,0 +1,11 @@
+<h1 class="text-center">Star Trek Lovers Unite</h1>
+
+<br>
+
+<% @posts.each do |post| %>
+  <div class="launchbox span3 text-center">
+    <h1><%= post.title %></h1>
+
+    <p><%= post.description %></p>
+  </div>
+<% end %>
