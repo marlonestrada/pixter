@@ -16,7 +16,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :description)  #sucks in the input from the form
+    params.require(:post).permit(:title, :description, :image)  #sucks in the input from the form
   end
 
 end
